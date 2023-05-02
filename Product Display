@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body
+{
+    background:linear-gradient(90deg,#4d3a99,#914ab0);
+    background-size: cover;
+    background-position: center;
+    color: #fff !important;
+}
+.products
+{
+    margin: 90px auto;
+    text-align: center;
+}
+.col-md-3{
+    background:linear-gradient(90deg,#3a443a,#afb1a7);
+    margin: 90px auto;
+    text-align: center;
+}
+h1
+{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+h1:after
+{
+    content: '';
+    background: rgb(222, 217, 217);
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 10px auto;
+}
+.col-md-3:hover{
+    box-shadow: 5px 7px 9px -3px rgba(255, 252, 252, 0.5);
+    cursor: pointer;
+}
+.profile a
+{
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.image
+{
+    width: 200px;
+    height: 120px;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="products">
+            <h1>OUR PRODUCTS</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="profile">
+                    <a href=""><h3>first product</h3></a>
+                    <p>about our product and uses of this product</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="profile">
+                    <a href=""><h3>second product</h3></a>
+                    <p>about our product and uses of this product</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="profile">
+                    <a href=""><h3>third product</h3></a>
+                    <p>about our product and uses of this product</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="profile">
+                    <a href=""><h3>fourth product</h3></a>
+                    <p>about our product and uses of this product</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
