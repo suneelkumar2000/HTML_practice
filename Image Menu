@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(139, 133, 133);
+}
+nav{
+    background: #fff;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 95%;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 200px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background: rgb(179, 175, 175);
+    padding: 20px;
+    margin: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 500;
+    font-size: 22px;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    transform: translateX(5px);
+    font-weight: 600;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>image</title>
+    <link href="{% static 'image.css' %}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="image">
+        <nav>
+            <img src="{% static 'images/usre1.jpg.png' %}" class="user-pic" onclick="tooglemenu()">
+            <div class="sub-menu-wrap" id="submenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="{% static 'images/usre1.jpg.png' %}">
+                        <h3>user name</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <p>edit profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>settings</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>help</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+<script>
+    let submenu = document.getElementById("submenu");
+    function tooglemenu(){
+        submenu.classList.toggle("open-menu");
+    }
+</script>
+</body>
+</html>
