@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>
+			hello
+		</title>
+		<style>
+			.form{
+				colour:#fff;
+				size:10pxl;
+				margin top:10%;
+				possion: static;
+				
+				}
+		</style>
+	</head>
+	<body>
+		<h1>
+			<table><td>table1</td><tr>product1</tr></table>
+		</h1>
+		<form class=form>
+			<lable>name</lable><input type=text,name=n,id=n1>
+			<lable>password</lable><input type=password,name=p,id=p1>
+			<button>submit</button><input type=submit>
+		</form>
+	</body>
+</html>
